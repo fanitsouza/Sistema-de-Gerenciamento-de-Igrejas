@@ -1,0 +1,90 @@
+/* From Uiverse.io by Samalander0 */ 
+:root {
+  --light-blue: #56ccf2;
+  --blue: #2f80ed;
+  --marine-blue: #2c3e50;
+}
+.card-grupo {
+    width: 320px;
+    background: var(--light-blue);
+    color: black;
+    position: relative;
+    border-radius: 2.5em;
+    padding: 2em;
+    transition: transform 0.4s ease;
+  }
+  
+  .card-grupo .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5em;
+    height: 100%;
+    transition: transform 0.4s ease;
+  }
+  
+  .card-grupo .card-top, .card .card-bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .card-grupo .card-top p, .card .card-top .card-title, .card .card-bottom p, .card .card-bottom .card-title {
+    margin: 0;
+  }
+  
+  .card-grupo .card-title {
+    font-weight: bold;
+  }
+  
+  .card-grupo .card-top p, .card .card-bottom p {
+    font-weight: 600;
+  }
+  
+  .card-grupo .card-bottom {
+    align-items: flex-end;
+    padding-top: 15px;
+  }
+  
+  .card-grupo .card-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: grid;
+    place-items: center;
+    pointer-events: none;
+ 
+  }
+  
+  .card-grupo .card-image svg {
+    width: 4em;
+    height: 4em;
+    transition: transform 0.4s ease;
+  }
+  
+  .card-grupo:hover {
+    cursor: pointer;
+    transform: scale(0.97);
+  }
+  
+  .card-grupo:hover .card-content {
+    transform: scale(0.96);
+  }
+  
+  .card-grupo:hover .card-image svg {
+    transform: scale(1.05);
+  }
+  
+  .card-grupo:active {
+    transform: scale(0.9);
+  }
+
+  .container-grupo{
+    flex-wrap:  wrap;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-left: 15px;
+  }

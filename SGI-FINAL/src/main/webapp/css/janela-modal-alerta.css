@@ -1,0 +1,156 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+
+:root {
+    --blue: #287bff;
+    --white: #fff;
+    --light-blue: #03a9f4;
+    --grey: #f5f5f5;
+    --black1: #222;
+    --black2: #999;
+    --yellow: #f8b300;
+    --dark-yellow: #c77000;
+
+}
+
+
+.janela-modal-alerta{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.466);
+    backdrop-filter: blur(10px);
+    display: none ;
+    align-items: center;
+    justify-content: center;
+    z-index: 99999;
+
+}
+
+.modal-alerta{
+    width:  60%;
+    min-width: 450px;
+    min-height: 200px;
+    background-color: #fff2009a;
+    backdrop-filter: blur(10px);
+    padding: 50px;
+    justify-content: center;
+    border-radius: 20px;
+
+}
+
+#fechar{
+    position: absolute;
+    top: -20px;
+    right:-10px;
+    width: 30px;
+    height: 30px;
+    border-radius:50% ;
+    border: 0;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+
+.janela-modal-alerta.abrir{
+    display: flex;
+}
+
+@keyframes abrirmodal {
+    from{
+        opacity: 0;
+        transform: translate3d(0, -20px, -5px);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+    
+}
+
+.abrir .modal-alerta{
+    animation: abrirmodal 0.3s;
+}
+
+.icone {
+    max-width: 200px;
+    max-height: 150px;
+    width: auto;
+    height: auto;
+}
+
+.container-modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.container-modal h1{
+	color: white;
+}
+
+.container-modal p{
+	color: white;
+    font-size: 25px;
+}
+
+.container-btn{
+    display: flex;
+    justify-content: center;
+    gap:10px;
+    align-items: center;
+  
+}
+#fechar p{
+  	font-size: 25px;
+  }
+#confirma-exclusao{
+	
+	font-size: 25px;
+}
+
+#confirma-exclusao {
+	height: 65px;
+  font-weight: bold;
+  color: var(--black1);
+  font-size: 25px;
+  padding: 10px 25px;
+  border-radius: 6px;
+  border: 0px solid #3866A3;
+  background: #03A9F4;
+  text-decoration: none;
+}
+#confirma-exclusao:hover {
+  color: #FFFFFF ;
+  background: green;
+}
+
+#btn-fechar-alerta{
+	height: 65px;
+	font-weight: bold;
+  color: #Ffffff;
+  font-size: 25px;
+  padding: 10px 25px;
+  border-radius: 6px;
+  border: 0px solid #3866A3;
+  background: #CF420E;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+	
+}
+
+#btn-fechar-alerta:hover {
+  color: var(-black1);
+  background: white;
+}
+

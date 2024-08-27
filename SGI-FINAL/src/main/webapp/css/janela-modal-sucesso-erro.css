@@ -1,0 +1,107 @@
+.janela-modal-sucesso{
+    width: 100vw;
+    height: 100vh;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.459);
+    backdrop-filter: blur(20px);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    
+}
+
+.janela-modal-erro{
+    width: 100vw;
+    height: 100vh;
+    position: fixed; /* Alterado para fixed */
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.459);
+    backdrop-filter: blur(20px);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.modal-sucesso, .modal-erro{
+    width: 60%;
+    min-width: 450px;
+    background-color: rgba(13, 204, 89, 0.626);
+    backdrop-filter: blur(10px);
+    padding: 50px;
+    border-radius: 20px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-erro{
+    background-color: rgba(204, 42, 13, 0.626);
+}
+
+.container-modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+   
+}
+.erro-texto{
+	 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container-modal h1, .container-modal p{
+	color: white;
+}
+
+.fechar {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; 
+    border: none;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    line-height: 30px; 
+    text-align: center; 
+    padding: 0;
+    cursor: pointer;
+}
+
+
+.janela-modal-sucesso.abrirSucesso, .janela-modal-erro.abrirErro{
+    display: flex;
+}
+
+.icone{
+    max-width: 200px;
+    max-height: 150px;
+    width: auto;
+    height: auto;
+}
+
+@keyframes abrirmodal {
+    from{
+        opacity: 0;
+        transform: translate3d(0, -20px, 0);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.abrirSucesso .modal-sucesso, .abrirErro .modal-erro{
+    animation: abrirmodal 0.5s;
+}

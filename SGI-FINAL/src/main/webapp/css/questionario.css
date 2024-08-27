@@ -1,0 +1,304 @@
+/* From Uiverse.io by JaydipPrajapati1910 */ 
+.card-questão {
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    background-color:  #03A9F4;
+    border-radius: 8px;
+    z-index: 1;
+    justify-content: center;
+  }
+.card-questão h3{
+    text-align: center;
+}
+.questao1, .questao2, .questao3, .questao4, .questao5 {
+    width: 800px;
+    height: auto;
+    display: none;
+    gap: 10px;
+  }
+.questao1.abrir{
+    display: flex;
+}
+.questao2.abrir{
+    display: flex;
+}
+.questao3.abrir{
+    display: flex;
+}
+.questao4.abrir{
+    display: flex;
+}
+.questao5.abrir{
+    display: flex;
+}
+
+  
+  .tools {
+    display: flex;
+    align-items: center;
+    padding: 9px;
+  }
+  
+  .circle {
+    padding: 0 4px;
+  }
+  
+  .box {
+    display: inline-block;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+    padding: 1px;
+    border-radius: 50%;
+  }
+  
+  .red {
+    background-color: #ff605c;
+  }
+  
+  .yellow {
+    background-color: #ffbd44;
+  }
+  
+  .green {
+    background-color: #00ca4e;
+  }
+
+  .card-questão__content{
+    justify-content: center;
+    display: inline-block;
+    align-items: center;
+    font-size: 20px;
+    padding-left: 30px;
+
+  }
+  .video-questionario{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+
+.card-questão__content .form{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+form#questionario div {
+    margin-bottom: 10px;
+}
+.alternativa label{
+    color: black;
+    
+}
+.cr-wrapper *,
+.cr-wrapper *::before,
+.cr-wrapper *::after {
+	box-sizing: content-box !important;
+}
+
+.cr-wrapper input {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+
+.cr-wrapper span {
+	font-size: 16px;
+}
+
+.cr-wrapper {
+	display: table;
+	position: relative;
+	padding-left: 30px;
+	cursor: pointer;
+	margin-bottom: 5px;
+}
+
+
+.cr-wrapper input[type="radio"] ~ .cr-input {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	height: 20px;
+	width: 20px;
+	background: #94A3B8;
+	transition: background 250ms;
+	border: 1px solid #F1F5F9;
+	border-radius: 20px;
+	transform: translate(0, -50%);
+}
+
+
+
+.cr-wrapper input[type="radio"] ~ .cr-input::after {
+	content: "";
+	position: absolute;
+	display: none;
+	left: 4px;
+	top: 4px;
+	width: 12px;
+	height: 12px;
+	border-radius: 20px;
+	background: #FFFFFF;
+	transition: background 250ms;
+}
+
+.cr-wrapper input:checked ~ .cr-input::after {
+	display: block;
+}
+
+
+
+.cr-wrapper:hover input[type="radio"]:not([disabled]) ~ .cr-input,
+.cr-wrapper input[type="radio"]:focus ~ .cr-input {
+	background: #E2E8F0;
+	border-color: #64748B;
+}
+
+
+
+.cr-wrapper input[type="radio"]:checked ~ .cr-input {
+	background: #F8B300;
+	border-color: #C77000;
+}
+
+.cr-wrapper input[type="checkbox"]:disabled ~ .cr-input,
+.cr-wrapper input[type="radio"]:disabled ~ .cr-input {
+	opacity: 0.5;
+	cursor: not-allowed;
+}
+
+.cr-wrapper input[type="checkbox"]:disabled ~ span,
+.cr-wrapper input[type="radio"]:disabled ~ span {
+	opacity: 0.5;
+	cursor: not-allowed;
+}
+
+
+
+.cr-wrapper input[type="radio"]:disabled ~ .cr-input::after {
+	background: #FFFFFF;
+}
+
+
+
+.cr-wrapper:hover input[type="radio"]:not([disabled]):checked ~ .cr-input,
+.cr-wrapper input[type="radio"]:checked:focus ~ .cr-input {
+	background: #F8B300;
+	border-color: #C77000;
+}
+
+/* From Uiverse.io by Madflows */ 
+.button {
+    position: relative;
+    overflow: hidden;
+    height: 3rem;
+    padding: 0 2rem;
+    border-radius: 1.5rem;
+    background: #3d3a4e;
+    background-size: 400%;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .button:hover::before {
+    transform: scaleX(1);
+  }
+  
+  .button-content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    background: linear-gradient(
+      82.3deg,
+      rgb(233, 214, 93) 10.8%,
+      rgb(238, 160, 88) 94.3%
+    );
+    transition: all 0.475s;
+  }
+  
+
+.informacao {
+    width: 800px;
+    height: 80px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    background-color: #ffffff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    position: relative;
+    overflow: hidden;
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+   
+  }
+  .informacao.abrir{
+    display: flex;
+  }
+  .wave {
+    position: absolute;
+    transform: rotate(90deg);
+    left: -31px;
+    top: 32px;
+    width: 80px;
+    fill: #4777ff3a;
+  }
+  .icon-container {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4777ff48;
+    border-radius: 50%;
+    margin-left: 8px;
+  }
+  .icon {
+    width: 17px;
+    height: 17px;
+    color: #124fff;
+  }
+  .message-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-grow: 1;
+  }
+  .message-text,
+  .sub-text {
+    margin: 0;
+    cursor: default;
+    
+  }
+  .message-text {
+    color: #124fff;
+    font-size: 25px;
+    font-weight: 700;
+  }
+  .sub-text {
+    font-size: 17px;
+    color: #555;
+  }
+  .cross-icon {
+    width: 18px;
+    height: 18px;
+    color: #555;
+    cursor: pointer;
+  }
+  
